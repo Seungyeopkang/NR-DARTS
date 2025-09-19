@@ -319,7 +319,7 @@ class AuxiliaryHeadCIFAR(nn.Module):
         self.fc2 = nn.Linear(128, num_classes)
 
     def forward(self, x):
-        x = x.mean([2, 3])  # Global Average Pooling
+        x = x.mean([2, 3])
         x = torch.relu(self.fc1(x))
         return self.fc2(x)
 
