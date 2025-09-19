@@ -3,10 +3,9 @@ import numpy as np
 import torch
 import shutil
 import torchvision.transforms as transforms
-from torch.autograd import Variable
 
 
-class AvgrageMeter(object):
+class AverageMeter(object):
     def __init__(self):
         self.reset()
 
