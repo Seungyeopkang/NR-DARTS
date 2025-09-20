@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 import sys
-from operations import *
-from utils import drop_path
-from genotypes import Genotype
+from .operations import *
+from .utils import drop_path
+from .genotypes import Genotype
 
 
 class NormalOnlyWeightedSearchCell(nn.Module):
